@@ -12,3 +12,8 @@ void before(context){
 void after(context){
     println "Splunk: running after the ${context.library} library's ${context.step} step"
 }
+
+@CleanUp
+void call(context){
+    println "Splunk: end of the pipeline!"
+}
