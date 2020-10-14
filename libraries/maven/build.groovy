@@ -1,6 +1,6 @@
 void call(){
     stage("Maven: Build"){
         println "build from the maven library"
-        sg "mvn clean install"
+        sh "mvn clean install"
     }
 }
